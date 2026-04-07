@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #051F20, #0B2B26, #163832);
+    color: #DAF1DE;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #8EB69B;
+}
+
+.form {
+    background: #0B2B26;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    flex: 1;
+    min-width: 120px;
+    background: #163832;
+    color: #DAF1DE;
+}
+
+input::placeholder {
+    color: #8EB69B;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #235347;
+    color: #DAF1DE;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8EB69B;
+    color: #051F20;
+}
+
+.primary-btn {
+    margin-top: 20px;
+    width: 200px;
+}
+
+.actions input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#result {
+    margin: 10px;
+    font-size: 18px;
+    color: #8EB69B;
+}
+
+#studentContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: linear-gradient(145deg, #163832, #235347);
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    color: #DAF1DE;
+}
+
+.card p {
+    color: #8EB69B;
+}
+
+.card button {
+    background: #051F20;
+}
+
+.card button:hover {
+    background: #DAF1DE;
+    color: #051F20;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
