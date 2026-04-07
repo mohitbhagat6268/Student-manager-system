@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Manager Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="file_0000000023c471fa92a984039b06b8dc.png" type="image/png">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Manager Pro</h1>
+
+    <div class="form">
+        <input type="hidden" id="studentId">
+
+        <div class="input-group">
+            <input type="text" id="name" placeholder="Enter Name"><br><br>
+            <input type="number" id="marks" placeholder="Enter Marks">
+        </div>
+        <button class="primary-btn" onclick="saveStudent()">Save Student</button>
+    </div>
+
+    <div class="actions">
+        <input type="text" id="search" placeholder="🔍 Search student..." onkeyup="searchStudent()">
+
+        <div class="action-buttons">
+            <button onclick="sortStudents()">⬇ Sort</button>
+            <button onclick="findTopper()">🏆 Topper</button>
+            <button onclick="findAverage()">📊 Average</button>
+        </div>
+    </div>
+
+    <div id="result"></div>
+    
+    <div id="studentContainer"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
